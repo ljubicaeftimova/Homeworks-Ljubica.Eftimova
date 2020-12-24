@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+.mainbox {
+    position: relative;
+    right: 0;
+    left: 0;
+    top: 75px;
+    bottom: 0;
+    margin: auto;
+    border: 3px solid black;
+    background: black;
+    width: 198px;
+    height: 198px;
+}
+
+.boxred {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    background-color: red;
+    margin: 2px black;
+    right: 1px;
+    top: 1px;
+}
+
+.bluebox {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background-color: rgb(47, 0, 255);
+    margin: 2px black;
+    left: 1px;
+    bottom: 1px;
+}
+
+.h1box {
+    position: absolute;
+    width: 116px;
+    height: 55px;
+    background-color: rgb(236, 226, 189);
+    margin: 2px black;
+    left: 61px;
+    bottom: 1px;
+}
+.h2box {
+    position: absolute;
+    width: 10px;
+    height: 24px;
+    background-color: rgb(236, 226, 189);
+    margin: 2px black;
+    left: 181px;
+    bottom: 1px;
+}
+.h3box {
+    position: absolute;
+    width: 10px;
+    height: 24px;
+    background-color: rgb(146, 117, 19);
+    left: 181px;
+    bottom: 32px;
+}
+
+.v1box {
+    position: absolute;
+    width: 55px;
+    height: 65px;
+    background-color: rgb(236, 226, 189);
+    margin: 2px black;
+    left: 1px;
+    top: 1px;
+}
+
+.v2box {
+    position: absolute;
+    width: 55px;
+    height: 60px;
+    background-color: rgb(236, 226, 189);
+    margin: 2px black;
+    left: 1px;
+    bottom: 61px;
+}
