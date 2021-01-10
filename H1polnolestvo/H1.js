@@ -13,7 +13,7 @@ let todayDay = todaydate.getDate();
 let todayMonth = todaydate.getMonth()+1; 
 let todayYear = todaydate.getFullYear();
 
-//Difference calulations 
+//Difference calulation 
 let ageDay = todayDay - birthDay;
 let ageMonth = todayMonth - birthMonth;
 let age = todayYear - birthYear;
