@@ -1,12 +1,12 @@
 function Bank(atm) {
 
-    let withDrawn = parseInt(prompt("Insert wanted cash"));
+    let withDraw = parseInt(prompt("Insert wanted cash"));
 
-    if(atm - withDrawn > 0){
+    if(atm - withDraw > 0){
 
-        let restSum = atm - withDrawn;
-        console.log("Currnet money left is: " + restSum);
-        console.log("Your withdrawn is: " + withDrawn);
+        let restSum = atm - withDraw;
+        console.log("Current money left is: " + restSum);
+        console.log("Your withdrawn is: " + withDraw);
 
     } else {
         console.log("Not enough money!");
@@ -15,3 +15,4 @@ function Bank(atm) {
 
 
 Bank(24000);
+
