@@ -102,3 +102,35 @@
         }
         createNewUser(userFirstName, userLastName,userName,userEmail, userPhone);
     })
+
+    document.getElementById("getCities").addEventListener("click", function() {
+        $.ajax({
+            url: "https://jsonplaceholder.typicode.com/photos",
+            success: function(result) {
+                if (result !== undefined && result.length > 0) {
+                    document.getElementById("divCities").innerHTML = (
+                        `
+                            <ul>
+                                ${result.map((element) => {
+    
+                                    return (
+                                        `
+                                            <li>
+                                                id: ${element.id}<br />
+                                                title: ${element.title}<br />
+                                                url: ${element.url}<br />
+                                                thumbnailUrl: ${element.thumbnailUrls}<br />
+                                            </li><br />
+                                        `
+                                    )
+                                }).join("")}
+                            </ul>
+                        `
+                    )
+                }
+            },
+            error: function (error) {
+                console.error(error);
+            }
+        })
+    }, false)
